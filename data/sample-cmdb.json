@@ -1,0 +1,19 @@
+{
+  "_note": "Synthetic data generated for this portfolio project. Names, IPs and serials are fictitious (RFC 5737 documentation IP ranges).",
+  "cmdb_ci": [
+    {"sys_id":"ci001","name":"web-prd-01","sys_class_name":"cmdb_ci_server","operational_status":"1","serial_number":"SN-A1001","ip_address":"192.0.2.11","os":"Linux","support_group":"grp_linux","owned_by":"","last_discovered":"2026-11-18 02:00:00"},
+    {"sys_id":"ci002","name":"web-prd-02","sys_class_name":"cmdb_ci_server","operational_status":"1","serial_number":"SN-A1002","ip_address":"192.0.2.12","os":"Linux","support_group":"grp_linux","owned_by":"","last_discovered":"2026-11-18 02:00:00"},
+    {"sys_id":"ci003","name":"WEB-PRD-01 ","sys_class_name":"cmdb_ci_server","operational_status":"1","serial_number":"sn-a1001","ip_address":"192.0.2.11","os":"Linux","support_group":"","owned_by":"","last_discovered":"2026-08-01 02:00:00"},
+    {"sys_id":"ci004","name":"db-prd-01","sys_class_name":"cmdb_ci_server","operational_status":"1","serial_number":"SN-B2001","ip_address":"","os":"Windows","support_group":"grp_dba","owned_by":"","last_discovered":""},
+    {"sys_id":"ci005","name":"Order Portal","sys_class_name":"cmdb_ci_appl","operational_status":"1","version":"4.2","support_group":"grp_apps","owned_by":"usr_owner1","last_discovered":"2026-11-15 02:00:00"},
+    {"sys_id":"ci006","name":"Legacy Reporting","sys_class_name":"cmdb_ci_appl","operational_status":"1","version":"","support_group":"","owned_by":"","last_discovered":"2026-05-01 02:00:00"},
+    {"sys_id":"ci007","name":"Online Ordering","sys_class_name":"cmdb_ci_service","operational_status":"1","support_group":"grp_apps","owned_by":"usr_owner1","last_discovered":"2026-11-10 02:00:00"},
+    {"sys_id":"ci008","name":"retired-box","sys_class_name":"cmdb_ci_server","operational_status":"6","serial_number":"SN-Z9999","ip_address":"192.0.2.99","os":"Linux","support_group":"","owned_by":"","last_discovered":"2025-01-01 00:00:00"}
+  ],
+  "cmdb_rel_ci": [
+    {"sys_id":"rel1","parent":"ci007","child":"ci005","type":"Depends on::Used by"},
+    {"sys_id":"rel2","parent":"ci005","child":"ci001","type":"Runs on::Runs"},
+    {"sys_id":"rel3","parent":"ci005","child":"ci002","type":"Runs on::Runs"},
+    {"sys_id":"rel4","parent":"ci005","child":"ci004","type":"Depends on::Used by"}
+  ]
+}
