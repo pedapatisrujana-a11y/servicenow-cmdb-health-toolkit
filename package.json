@@ -1,0 +1,12 @@
+{
+  "name": "servicenow-cmdb-health-toolkit",
+  "version": "1.0.0",
+  "description": "CMDB health scoring Script Include (completeness, correctness, compliance) with unit tests and synthetic data.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "report": "node scripts/run-report.js"
+  },
+  "engines": { "node": ">=18" }
+}

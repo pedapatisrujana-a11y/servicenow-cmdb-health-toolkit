@@ -1,0 +1,10 @@
+{
+  "staleDays": 30,
+  "requiredFields": {
+    "cmdb_ci_server": ["name", "serial_number", "ip_address", "os", "support_group"],
+    "cmdb_ci_appl": ["name", "version", "support_group", "owned_by"],
+    "cmdb_ci_service": ["name", "owned_by", "support_group"]
+  },
+  "relationshipRequiredClasses": ["cmdb_ci_appl", "cmdb_ci_service"],
+  "weights": { "completeness": 0.4, "correctness": 0.35, "compliance": 0.25 }
+}
